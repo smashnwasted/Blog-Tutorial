@@ -1,0 +1,105 @@
+djano tutorial - https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html
+W3 - https://www.w3schools.com/
+basecamp 3  api - https://github.com/basecamp/bc3-api 
+
+Stack:
+HTML/CSS/JS
+
+
+
+#tests
+	#is user
+	#if email in db as user
+	
+
+#Homepage
+	#isuser
+		if is logged in
+			Menu == signed in menu
+		else
+			Menu == guest menu		
+	#Menu-Guest
+		#Links Stuio and Recording-page
+		#Link Live sound and DJing-page
+		#Chat Room's (public chat rooms)-page(chat room/blog)
+		#Sign in/Create User-page(user)
+		#View the studio-page
+		#View past events-page
+		#About-page
+	
+	#Menu-Signin
+		#Links Stuio and Recording-page 
+		#Link Live sound and DJing-page
+		#Chat Room's (public chat rooms)-page
+		#Profile-page(user/signedin)
+			#your Chat Room's(signedinuser/listchats)
+		#View the studio-page
+		#View past events-page
+		#About- page
+
+	# Body-guest
+		#Brand Image
+		#Section Explaining the Studio
+		#Section Showing recording sessions with link to 
+		#Section explaining the Live Events
+
+#Userpage
+	#Signin
+		#if user==valid
+			redirect-Profile page
+		#else
+			Error
+	#Signup
+		#redirect - newuserpage
+#NewUserpage
+	#form - (username, fname, lname, Email, DOB, Mailing, Physical)
+
+#Studiopage
+	# Link to Book a session(page?popup?)(BaseCamp?)
+	# Link to view studio photos
+
+#Livesoundpage
+	#Book and Event(page?popup?)(BaseCamp?)
+	#Photos of past events
+
+#BookaRecordingpage
+	#Main portion of page should show calendar of availablity(BaseCamp?)
+	
+	#Adding a new event(BaseCamp?)
+		#ImportUserInfo (Username, Name, DOB, Mailing Address)
+		#Radial - "Type" == rec/mix/reamp
+		#Dropdown Menu - "Request Engineer"
+			# Default = suggested engineer based
+			#if bring engineer
+				#form - (Name, Phone)
+		#Radial - "Location" == (2 radial button{Studio, other}
+			#if other 
+				get_address
+		#Form - "start Date/Time" == time&date
+		#Form - "End Date/Time" == time&date
+			#add option for undisclosed
+		#Form - "musicians" == 
+				text Name
+				text email
+				if email is in db as user auto fill appropriot following fields
+					else leave fields blank
+				text instrument
+				
+		# Uploadfunction - "Attachments" == click button to add attachments.
+
+#BookanEventpage
+	#Main portion of page should show calendar of availablity(BaseCamp?)
+	
+	#Adding a new event(BaseCamp?)
+		#importuserinfo (Username, Name, DOB, Mailing Address)
+		#Radial (Dj, Concert, Event)
+			#if event please Specify(aka wedding, birthday, ect.)
+		#Dropdown Menu - "Request Engineer"
+			#bring engineer
+		#Radial - "Location"
+			#default == get_useraddress
+		#Form - "start Date/Time" == time&date
+		#Form - "End Date/Time" == time&date
+			#add option for undisclosed
+		#Selection equipment/services
+		#"Attachments"
