@@ -11,8 +11,10 @@
 				/* Make the image fully responsive */
 				.carousel-inner img {
 				width: 100%;
-				height: 70%;
-				margin-bottom:0;
+				height: 50%;
+				margin-top: 0;
+				padding: 0;
+				margin: 0;
 				}
 
 				.jumbotron{
@@ -21,7 +23,6 @@
 					background-size: cover;
 					background-position: center;
 					background-repeat: no-repeat;
-					background-attachment: ;
 				}
 			</style>
 	</head>
@@ -35,7 +36,8 @@
 		</div>-->
 
 		<!-- Navbar Logo-->
-		<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+		<div class="container-fluid" style="padding: 0; margin: 0;">
+			<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top " style="margin-bottom: 0;">
 			<a class="navbar-brand" href="#">Navbar</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 				<span class="navbar-toggler-icon"></span>
@@ -55,51 +57,50 @@
 			</div>  
 		</nav>
 		<br>
+		</div>
 
 		<!--Photo Carocel-->
-		<div class="container-fluid ml-auto">
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-				<!-- Indicators -->
-				<ul class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1">
-					</li>
-				</ul>
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1">
+				</li>
+			</ul>
 
-				<!-- The slideshow -->
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-				  		<img src="pn1.jpg" alt="Paranormal1">
-					</div>
-					<div class="carousel-item">
-				  		<img src="pn2.jpg" alt="Paranormal2">
-					</div>
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+			  		<img src="pn1.jpg" alt="Paranormal1">
 				</div>
-
-				<!-- Left and right controls -->
-				<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-					<span class="carousel-control-prev-icon"></span>
-				</a>
-				<a class="carousel-control-next" href="#myCarousel" data-slide="next">
-					<span class="carousel-control-next-icon"></span>
-				</a>
+				<div class="carousel-item">
+			  		<img src="pn2.jpg" alt="Paranormal2">
+				</div>
 			</div>
 
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
 		</div>
 
 
-			<!-- Container 1 -->
+			<!-- Container 1 = Function in views -->
 			<!--This Content will be a contianer that will be dynamic depending on what the user selects from the menu options -->
 			<div class ="container-fluid">
-			    <h1>Link based Dynamic content 1</h1>    
+			    <h1>Heading for what the page is about</h1>    
 			</div>
 			
 			<!-- Container 2 -->
 			<!--This Content will be a contianer that will be dynamic depending on what the user selects from the menu options -->
 			<div class="container-fluid p-2 my-2 bg-dark text-white">
-	            <h1>Heading for what the page is about</h1>
-	            <p>Description of what the page is about</p>
+	            <h1>News Container</h1>
+	            <p>Newspost</p>
 	        </div>
 
 	        <!-- Container 3 -->
