@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!--Move this to css style sheet-->
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -36,6 +38,7 @@
 </head>
 <body>
 
+<!--Make app in django to make dynamic(guest/user, Home/shop/blog) Make this sticky top, add Brand name/logo-->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -50,7 +53,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -60,6 +63,7 @@
   </div>
 </nav>
 
+<!--Make an order that makes since for updating customers (Brand Banner/Sales/Newest news/)-->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -96,24 +100,30 @@
       <span class="sr-only">Next</span>
     </a>
 </div>
-  
+
+<!--This is the Main Body of the page that containts all smaller containers.-->  
 <div class="container text-center">    
-  <h3>What We Do</h3><br>
+  <!--Company Creed-->
+  <h3>Candle Company</h3><br>
+  <!--Row one contains 2 easy filter catagories for shopping and the two top headlines-->
   <div class="row">
+    <!--Popular way to sort/filter-->
     <div class="col-sm-4">
       <img src="images/candlesales4.jpg" class="img-responsive" style="width:100%" alt="candle 4">
-      <p>Current Project</p>
+      <p>Dropdown here</p>
     </div>
+    <!-- Popular way to sort/filter-->
     <div class="col-sm-4"> 
       <img src="images/candlesales3.jpg" class="img-responsive" style="width:100%" alt="candlesales3">
-      <p>Project 2</p>    
+      <p>Dropdown here</p>    
     </div>
+    <!--Top two Headlines-->
     <div class="col-sm-4">
       <div class="well">
-       <p>Some text..</p>
+       <h3>Headline 1</h3>
       </div>
       <div class="well">
-       <p>Some text..</p>
+       <h3>Headline 2</h3>
       </div>
     </div>
   </div>
